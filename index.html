@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMT BANKING</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="faq.css" />
+   
+  </head>
+  <body>
+    <!-- NavBar starts here -->
+    <section class="nav">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo" class="logo" />
+        </div>
+        <div class="nav-links">
+          <ul class="nav-link">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="btn">
+          <button>SIgn Up</button>
+        </div>
+      </div>
+    </section>
+    <!-- NavBar Ends here -->
+
+    <!-- FAQ -->
+     <section class="search-section">
+  <h1>How can we help?</h1>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Ask a question" oninput="searchFAQs()">
+    <button class="search-btn" onclick="searchFAQs()" aria-label="Search">
+      <!-- SVG lens icon -->
+      <svg width="20" height="20" viewBox="0 0 20 20">
+        <circle cx="9" cy="9" r="7" stroke="#888" stroke-width="2" fill="none"/>
+        <line x1="14" y1="14" x2="19" y2="19" stroke="#888" stroke-width="2"/>
+      </svg>
+    </button>
+  </div>
+</section>
+<section class="search-results" id="searchResults">
+  <p>No results found.</p>
+</section>
+<section class="articles">
+  <div class="article">
+    <img src="/images/reset-password.jpg" alt="Reset Password">
+    <h2>How to reset your password</h2>
+    <p>Click "Forgot Password" and follow the on-screen instructions.</p>
+  </div>
+  <div class="article">
+    <img src="/images/faq2.jpg" alt="Mobile Banking">
+    <h2>Using online banking</h2>
+    <p>Manage accounts, transfer funds, and pay bills online easily.</p>
+  </div>
+  <div class="article">
+    <img src="/images/security.jpg" alt="security ">
+    <h2>Secure my online banking information</h2>
+    <p>We use encryption, firewalls, and 2FA.</p>
+  </div>
+</section>
+<section class="faq-section">
+  <h2><pre>   FAQ</pre></h2>
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">How do I reset my password?</h3>
+    <p>You can reset your password by clicking "Forgot Password" on the login screen and following the instructions.</p>
+  </div>
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">What are the fees for using this account?</h3>
+    <p>Fees vary by account type. Please refer to our pricing page or contact support for specific details.</p>
+  </div>
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">Is mobile banking secure?</h3>
+    <p>Yes. Our mobile banking app uses encryption and multifactor authentication to keep your information safe.</p>
+  </div>
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">How do i open an online banking account?</h3>
+    <p>You can open an account by clicking the "Sign In" button on our Home page and following the registration  process. You'll need a valid ID , proof of address, and your account information.
+</p>
+  </div>
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">What should i do if i notice suspicious activity on my account?
+</h3>
+    <p>Immediately contact our support team and change your password. We'll help you investigate and secure your account.
+</p>
+  </div>
+</section>
+<section class="support-banner">
+  <div class="text">
+    <h2>Talk to an expert</h2>
+    <p>We are here to answer all your questions.</p>
+    <button class="button">Contact support</button>
+  </div>
+  <img src="/images/support-agent4.png" alt="Support Agent">
+</section>
+<script src="faq.js"></script>
+
+    <!-- ENDS-->
+
+    
+
+
+  </body>
+</html>
